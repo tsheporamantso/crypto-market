@@ -17,7 +17,7 @@ export const Home = () => {
   return (
     <div className="mainContainer">
       <div>
-        <h1 className="mainTitle">Choose Your Coin</h1>
+        <h1 className="mainTitle">Select Your Coin</h1>
         <div className="container">
           <div>
             <NavBar />
@@ -26,7 +26,7 @@ export const Home = () => {
             <input
               className="searchInput"
               type="text"
-              placeholder="search"
+              placeholder="search..."
               onChange={(event) => setSearch(event.target.value)}
             />
           </div>
@@ -38,7 +38,8 @@ export const Home = () => {
         </div>
       </div>
       <div className="coinItems">
-        <Coins coins={coin.filter((coin) => (search.toLowerCase() === '' ? coin : coin.name.toLowerCase().include(search.toLowerCase())))} />
+        <Coins coins={coin.filter((coin) => (search.toLowerCase() === '' ? coin : coin.name.toLowerCase().includes(search.toLowerCase())))} />
+
       </div>
     </div>
   );
