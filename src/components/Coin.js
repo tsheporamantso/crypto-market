@@ -21,12 +21,15 @@ const Coin = ({
   </Link>
 );
 
-Coin.propTypes = {
-  name: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  symbol: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
-  id: PropTypes.string.isRequired,
-};
-
 export default Coin;
+
+Coin.defaultProps = {
+  name: '', price: '', symbol: '', image: '', id: '',
+};
+Coin.propTypes = {
+  name: PropTypes.string,
+  price: PropTypes.string,
+  symbol: PropTypes.string,
+  image: PropTypes.string,
+  id: PropTypes.string,
+};
