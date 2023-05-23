@@ -19,33 +19,34 @@ body {
 .year {
   color: white;
   font-size: medium;
-  margin-left: 3px;
+  padding: 3px;
 }
 
 .searchBox {
-  margin-right: 0;
-  margin-left: auto;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
 }
 
-.searchButton {
-  width: 25px;
+.rightIcons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-right: 10px;
 }
 
 .navContainer {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 5px;
   background-color: rgb(203, 178, 253);
-}
-
-.title {
-  margin-left: 20%;
-  margin-bottom: 50px;
-  color: white;
 }
 
 .homeCoinList {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 5px;
   list-style: none;
   margin-top: 20px;
   padding: 0 1rem;
