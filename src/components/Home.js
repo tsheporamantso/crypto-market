@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { FaSearch } from 'react-icons/fa';
+import { HiOutlineMicrophone } from 'react-icons/hi';
+import { BsGearWide } from 'react-icons/bs';
 import { getCoins } from '../redux/coins/coinsSlice';
 import Coins from './Coins';
 import { NavBar } from './Navigation';
@@ -25,14 +27,18 @@ export const Home = () => {
             <input
               className="searchInput"
               type="text"
-              placeholder="search..."
+              placeholder="Search..."
               onChange={(event) => setSearch(event.target.value)}
             />
+            <div>
+              <button aria-label="Mute volume" type="button" className="searchButton" onChange={(e) => setSearch(e.target.value)}>
+                <FaSearch />
+              </button>
+            </div>
           </div>
-          <div>
-            <button aria-label="Mute volume" type="button" className="searchButton" onChange={(e) => setSearch(e.target.value)}>
-              <FaSearch />
-            </button>
+          <div className="rightIcons">
+            <HiOutlineMicrophone />
+            <BsGearWide />
           </div>
         </div>
       </div>
