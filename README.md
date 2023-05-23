@@ -38,7 +38,7 @@
 
 Online Crypto Currency Market indicator
 
-**Crypto Currency Market Indicator**This online application enables users to monitor crypto currency market changes. Furthermore, it offers information about the total volume moved and highs & lows for the day. The project integrates the coingecko API.
+**Crypto Currency Market Indicator** This online application enables users to monitor crypto currency market changes. Furthermore, it offers information about the total volume moved and highs & lows for the day. The project integrates the coingecko API.
 
 ## 🛠 Built With <a name="built-with"></a>
 
