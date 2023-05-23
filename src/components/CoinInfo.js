@@ -104,19 +104,23 @@ const CoinInfo = ({
   </>
 );
 
-CoinInfo.propTypes = {
-  marketCap: PropTypes.string.isRequired,
-  marketCapRank: PropTypes.string.isRequired,
-  totalVolume: PropTypes.string.isRequired,
-  high24h: PropTypes.string.isRequired,
-  low24h: PropTypes.string.isRequired,
-  priceChange24h: PropTypes.string.isRequired,
-  marketCapChange24h: PropTypes.string.isRequired,
-  totalSupply: PropTypes.string.isRequired,
-  name: PropTypes.string.isRequired,
-  price: PropTypes.string.isRequired,
-  symbol: PropTypes.string.isRequired,
-  image: PropTypes.string.isRequired,
+export default CoinInfo;
+
+CoinInfo.defaultProps = {
+  marketCap: '', marketCapRank: '', totalVolume: '', high24h: '', low24h: '', priceChange24h: '', marketCapChange24h: '', totalSupply: '', name: '', price: '', symbol: '', image: '',
 };
 
-export default CoinInfo;
+CoinInfo.propTypes = {
+  marketCap: PropTypes.string,
+  marketCapRank: PropTypes.string,
+  totalVolume: PropTypes.string,
+  high24h: PropTypes.string,
+  low24h: PropTypes.string,
+  priceChange24h: PropTypes.string,
+  marketCapChange24h: PropTypes.string,
+  totalSupply: PropTypes.string,
+  name: PropTypes.string,
+  price: PropTypes.string,
+  symbol: PropTypes.string,
+  image: PropTypes.string,
+};
