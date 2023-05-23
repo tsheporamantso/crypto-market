@@ -2,6 +2,8 @@ import { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useParams } from 'react-router-dom';
 import { FaSearch } from 'react-icons/fa';
+import { HiOutlineMicrophone } from 'react-icons/hi';
+import { BsGearWide } from 'react-icons/bs';
 import CoinInfo from './CoinInfo';
 import { getCoins } from '../redux/coins/coinsSlice';
 import { NavBar } from './Navigation';
@@ -33,11 +35,15 @@ const ShowCoin = () => {
               className="searchInput"
               placeholder="Search..."
             />
+            <div>
+              <button aria-label="Mute volume" type="button" className="searchButton">
+                <FaSearch />
+              </button>
+            </div>
           </div>
-          <div>
-            <button aria-label="Mute volume" type="button" className="searchButton">
-              <FaSearch />
-            </button>
+          <div className="rightIcons">
+            <HiOutlineMicrophone />
+            <BsGearWide />
           </div>
         </div>
       </div>
