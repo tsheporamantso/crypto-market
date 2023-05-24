@@ -23,7 +23,10 @@ const Coins = (props) => {
 };
 
 export default Coins;
+Coins.defaultProps = {
+  coins: '',
+};
 
 Coins.propTypes = {
-  coins: PropTypes.string.isRequired,
+  coins: PropTypes.string,
 };
