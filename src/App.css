@@ -46,7 +46,7 @@ body {
 .homeCoinList {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  gap: 2px;
   list-style: none;
   margin-top: 20px;
   padding: 0 1rem;
@@ -58,11 +58,11 @@ body {
 }
 
 .coin {
-  border: solid white;
-  border-radius: 2px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 1px solid white;
+  border-radius: 2px;
 }
 
 .coinName {
