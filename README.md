@@ -89,9 +89,10 @@ Online Crypto Currency Market indicator
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🚀 Live Demo and project presentation <a name="live-demo"></a>
+## 🚀 Live Demo and Project Presentation <a name="live-demo"></a>
 
 - [Live Demo Link](https://crypto-currency-3q3f.onrender.com)
+- [Presentation Link](https://drive.google.com/file/d/1ucz2aqOuZMUcVmeaCyk3skpRosmtsB44/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
